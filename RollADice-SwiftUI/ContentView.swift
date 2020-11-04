@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var leftDice = 1
-    @State var rightDice = 2
+    @State var leftDice = Int.random(in: 1...6)
+    @State var rightDice = Int.random(in: 1...6)
     
     var body: some View {
         ZStack {
